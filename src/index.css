@@ -1,0 +1,27 @@
+:root {
+  --font: #E3E7EA;
+
+  --primary: #757A89;
+  --secondary: #78839B;
+  --tertiary: #838B84;
+
+  --background-primary: #171F2C;
+  --background-secondary: #111720;
+  --background-tertiary: #10151d;
+}
+
+body {
+  background: black;
+  background: radial-gradient(circle, var(--background-primary) 0%, var(--background-secondary) 100%) !important;
+  color: var(--font);
+}
+
+.profileCard {
+  margin-top: 20px;
+  background: var(--background-secondary)
+}
+
+#profile {
+  background: black;
+  background: var(--background-tertiary);
+}
