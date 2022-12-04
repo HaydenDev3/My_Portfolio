@@ -17,11 +17,45 @@ body {
 }
 
 .profileCard {
-  margin-top: 20px;
-  background: var(--background-secondary)
+  width: 0.1rem;
 }
 
 #profile {
-  background: black;
+  width: screen;
   background: var(--background-tertiary);
+  /* margin-bottom: 10vh; */
+  padding-top: 1em;
+  padding-bottom: 1rem;
+  padding-left: 9em;
+  padding-right: 9em;
+}
+
+.bg-primary {
+  background-color: var(--background-primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--background-secondary) !important;
+}
+
+.bg-tertairy {
+  background-color: var(--background-tertiary) !important;
+}
+
+.bg-gradient-primary {
+  background: black;
+  background: radial-gradient(circle, var(--background-primary) 0%, var(--background-secondary) 100%) !important;
+  color: var(--font);
+}
+
+.bg-gradient-secondary {
+  background: black;
+  background: radial-gradient(circle, var(--background-secondary) 0%, var(--background-primary) 100%) !important;
+  color: var(--font);
+}
+
+.bg-gradient-tertiary {
+  background: black;
+  background: radial-gradient(circle, var(--background-tertiary) 0%, var(--background-primary) 100%) !important;
+  color: var(--font);
 }

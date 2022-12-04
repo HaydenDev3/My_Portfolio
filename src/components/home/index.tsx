@@ -1,7 +1,9 @@
 import { Fade } from "@mui/material";
 import { ProfileCardComponent } from "./ProfileCard";
-import { WavesBottomComponent } from "./WavesBottom";
-import { WavesTopComponent } from "./WavesTop";
+import { WavesBottomComponent } from "../utils/WavesBottom";
+import { WavesTopComponent } from "../utils/WavesTop";
+import { AnimatedWaves } from "../utils/AnimatedWaves";
+import { FooterComponent } from "../core/FooterComponent";
 
 export const HomeComponent = ({ }): Promise<any> | any => {
     return (
@@ -27,13 +29,17 @@ export const HomeComponent = ({ }): Promise<any> | any => {
                     </Fade>        
                 </div>
             </main>
-            {/* <WavesTopComponent></WavesTopComponent> */}
-            <WavesBottomComponent />
-            <Fade in={true}>
-                <div id="profile">
-                    <ProfileCardComponent></ProfileCardComponent>
-                </div>
-            </Fade>
+            <div style={{ marginTop: "25vh" }}>
+                <AnimatedWaves inverted={false} />
+                    <Fade in={true}>
+                        <div id="profile">
+                            <ProfileCardComponent></ProfileCardComponent>
+                        </div>
+                    </Fade>
+                <AnimatedWaves inverted={true} customStyles={{ marginBottom: "1rem" }}/>
+            </div>
+
+            <FooterComponent />
         </>
     );
 };

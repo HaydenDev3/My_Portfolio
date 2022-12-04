@@ -8,8 +8,10 @@ import { HomeComponent } from "./components/home/index";
 function App() {
   return (
     <>
-      <NavbarComponent active="home"></NavbarComponent>
-      <HomeComponent></HomeComponent>
+      <div className='h-screen'>
+        <NavbarComponent active="home"></NavbarComponent>
+        <HomeComponent></HomeComponent>
+      </div>
     </>
   )
 }
